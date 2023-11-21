@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Registration.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="registration-container1 container-fluid col-md-12 col-12 col-lg-12"
+    >
+      <video autoplay muted loop id="myVideo">
+        <source src="Registration.mp4" type="video/mp4" />
+      </video>
+      <div class="registration-container2 content">
+        <form action="" name="Formfill" onsubmit="return validation()">
+          <h5 class="main-heading">Register Here</h5>
+          <p id="result"></p>
+          <div class="input-box">
+            <i class="bx bxs-user"></i>
+            <label for="Username"
+              ><input
+                type="text"
+                placeholder="Usename"
+                name="Username"
+                id="Username"
+            /></label>
+          </div>
+          <div class="input-box">
+            <i class="bx bxs-envelope"></i>
+            <input type="text" name="email" placeholder="Email" />
+          </div>
+          <div class="input-box">
+            <i class="bx bxs-lock-alt"></i>
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+          <div class="input-box">
+            <i class="bx bxs-lock-alt"></i>
+            <input
+              type="password"
+              name="cpassword"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div class="button">
+            <input
+              type="submit"
+              class="btnstyle1 btn"
+              onclick="validation()"
+              value="Register"
+            />
+          </div>
+          <div class="popup" id="Popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h3>Thank You!</h3>
+            <p>Registered Successfully.</p>
+            <div class="button">
+              <input
+                type="submit"
+                class="btnstyle1 btn"
+                onclick="CloseSlide()"
+                value="OK"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="Registration.js"></script>
+  </body>
+</html>
